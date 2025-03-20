@@ -35,29 +35,3 @@ export class App extends React.Component<State> {
     );
   }
 }
-
-// export const App: React.FC = () => {
-//   const [keyPress, setKeyPress] = useState('');
-
-//   const handleKeyPress = (event: KeyboardEvent) => {
-//     setKeyPress(event.key);
-//   };
-
-//   useEffect(() => {
-//     document.addEventListener('keyup', handleKeyPress);
-
-//     return () => {
-//       document.removeEventListener('keyup', handleKeyPress);
-//     };
-//   }, []);
-
-//   return (
-//     <div className="App">
-//       {keyPress ? (
-//         <p className="App__message">The last pressed key is [{keyPress}]</p>
-//       ) : (
-//         <p className="App__message">Nothing was pressed yet</p>
-//       )}
-//     </div>
-//   );
-// };
